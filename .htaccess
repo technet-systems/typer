@@ -1,0 +1,7 @@
+AuthName "Enter User & Pass"
+AuthType Basic
+AuthUserFile backup/.htpasswd
+Require valid-user
+
+RewriteEngine On
+RewriteRule ^/(.*)$ /typer/$1 [R=301,NC,L]
